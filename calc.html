@@ -56,9 +56,9 @@
 </head>
 <body>
 	<h1 align="center" style="font-size: 100px;"><u>BASIC CALCULATOR</u></h1><br><br>
-	<div class="design">
+	
 		<form class="calc" name="calci">
-			<div class="display"><input type="text" class="isdisplay" name="data" ><br></div>
+			<div class="display"><input type="text" class="isdisplay" name="data" autofocus><br></div>
 			<input type="button" class="button" name="b1" value="1" onclick="displayval(b1.value)">
 			<input type="button" class="button" name="b2" value="2" onclick="displayval(b2.value)">
 			<input type="button" class="button" name="b3" value="3" onclick="displayval(b3.value)">
@@ -77,7 +77,7 @@
 			<input type="button" class="button" name="b4" value="=" onclick="data.value=eval(data.value)">
 
 		</form>
-	</div>
+	
 	<script type="text/javascript">
 		function displayval(bt)
 		{ if(bt!="C"){
@@ -85,7 +85,8 @@
 		}
 			
 			else{
-				calci.data.value=null;	
+				calci.data.value=null;
+					
 			} 
 		}
 	</script>
