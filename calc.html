@@ -74,7 +74,8 @@
 			<input type="button" class="button" name="bzero" value="%" onclick="displayval(bzero.value)">
 			<input type="button" class="button" name="breset" value="C" onclick="displayval(breset.value)">
 			<input type="button" class="button" name="bsum" value="+" onclick="displayval(bsum.value)">
-			<input type="button" class="button" name="b4" value="=" onclick="data.value=eval(data.value)">
+			<input type="button" class="button" name="b4" value="=" onclick="data.value=eval(data.value) onkeydown = "if (event.keyCode == 13)
+                        data.value=eval(data.value)">
 
 		</form>
 	
@@ -89,6 +90,8 @@
 					
 			} 
 		}
+	
+
 	</script>
 	
 		<p align="right" style="color: black; padding-right: 10px">MADE WITH <span style="color: red; font-size: 30px;">&hearts;</p>
